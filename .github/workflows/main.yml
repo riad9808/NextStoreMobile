@@ -13,8 +13,12 @@ jobs:
         uses: actions/checkout@master
       - name: Install Dependencies
         run: npm install
+      - name: install angular
+        run : npm install -g @angular/cli
+      -name: install ionic
+        run: npm install -g @ionic/cli     
       - name: Build
-        run: ng run app:build
+        run: ionic build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
