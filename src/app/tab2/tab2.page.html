@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Next Store
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
+<ion-toolbar>
+  <ion-segment [(ngModel)]="type" >
+    <ion-segment-button value="Telephones" >
+      <ion-icon name="phone-portrait-outline"></ion-icon>
+      <ion-label>Telephones</ion-label>
+      
+    </ion-segment-button>
+    <ion-segment-button  value="Magasins">
+      <ion-label>Magasins</ion-label>
+      <ion-icon name="storefront-outline"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+
+<ion-content [fullscreen]="true" [ngSwitch]="type">
+  <div *ngSwitchCase="'Telephones'">
+    <app-products>
+
+    </app-products>
+  </div>
+  <div  *ngSwitchCase="'Magasins'">
+    <app-stores >
+  
+    </app-stores>
+  </div>
+
+
+
+
+</ion-content>
+

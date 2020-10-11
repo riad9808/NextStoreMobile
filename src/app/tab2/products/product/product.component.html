@@ -1,0 +1,53 @@
+
+
+
+
+  
+<ion-card href="#" class="ion-activated">
+  <img src="" />
+  
+  <ion-item>
+    
+    <ion-label>SmartPhone</ion-label>
+    <ion-button fill="outline" slot="end">View</ion-button>
+  </ion-item>
+  <ion-card-header>
+    
+    <ion-card-subtitle>{{Prod.brand}} <ion-icon  name="logo-ionic"></ion-icon></ion-card-subtitle>
+    <ion-card-title>{{Prod.model}}</ion-card-title>
+    
+  </ion-card-header>
+    
+  <ion-card-content>
+   <ion-item>
+    <ion-img  style="width: 200px; height: 200px;" src="/assets/mia3.jpg"></ion-img>
+   </ion-item>
+      
+    
+    <ion-list>
+      <ion-list-header   >
+        <ion-label color="secondary"><h2>Caracteristiques</h2></ion-label> 
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Processeur {{Prod.idField}}</ion-label>
+
+        <ion-label slot="end">{{Prod.cpu}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>RAM</ion-label>
+        <ion-label slot="end">{{Prod.RAM}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Stockage</ion-label>
+        <ion-label slot="end">{{Prod.stockage}}</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Prix</ion-label>
+        <ion-label slot="end" color="secondary">{{Prod.price}} DA</ion-label>
+      </ion-item>
+      
+    </ion-list>
+   
+  </ion-card-content>
+</ion-card>
